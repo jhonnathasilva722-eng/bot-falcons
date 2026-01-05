@@ -8,7 +8,7 @@ const client = new Client({
   ]
 });
 
-const TOKEN = "COLE_SEU_TOKEN_AQUI";
+const TOKEN = process.env.TOKEN;
 
 client.once("ready", () => {
   console.log("🦅 Bot ligado com sucesso!");
